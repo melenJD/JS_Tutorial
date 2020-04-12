@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  margin-top: 75px;
+  color: white;
+}
+
+.buttons {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid white;
+  padding: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.buttons p {
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0px 5px;
+  background-color: white;
+  outline: 0px;
+  border: 0px;
+}
+
+input {
+  padding: 15px;
+  border: 0px;
+  margin: 10px;
+}
+
+#scroll {
+  width: 100%;
+  height: 5000px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  background-color: skyblue;
+}
+
+#percent {
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50,50,50);
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 50%, 70% 0, 50% 0, 50% 50%, 0 50%);
+  font-weight: 800;
+  text-shadow: 1px 1px 1px black;
+}
+
+#color {
+  position: fixed;
+  top: 100px;
+  width: fit-content;
+  height: 50px;
+  background-color: rgb(50,50,50);
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+#color::before {
+  content: 'COLOR = ';
+}
